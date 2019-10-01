@@ -2,11 +2,7 @@ sudo: false
 language: python
 python:
   - "3.6"
-before_install:
-  - sudo apt-get install -y texlive graphviz dvipng
 install:
-  - pip install tox-travis codecov
+  - whoami
 script: 
-  - tox
-  - ls -l .coverage
-  - codecov
+  - bash -c "echo $MYNAME2"
